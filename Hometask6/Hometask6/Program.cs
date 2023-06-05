@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string[] files = Directory.GetFiles("C:\\New folder\\", "*.txt");
+            foreach (string file in files) 
+            {
+                Console.WriteLine(file);
+            }
         }
     }
 }
