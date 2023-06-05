@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string[] directories = Directory.GetDirectories("C:\\New folder\\","book*");
+            foreach(string d in directories) 
+            {
+                Console.WriteLine(d);
+            }
         }
     }
 }
