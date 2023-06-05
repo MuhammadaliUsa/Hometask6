@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string file = "C:\\New folder\\.gitignore";
+            if (File.Exists(file))
+            {
+                Console.WriteLine("has");
+            }
+            else
+            {
+                File.Create(file);
+            }
         }
     }
 }
