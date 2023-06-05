@@ -7,7 +7,8 @@
             string[] files = Directory.GetFiles("C:\\New folder\\", "*.txt");
             foreach (string file in files) 
             {
-                Console.WriteLine(file);
+                string fullName=Path.GetFileName(file);
+                Console.WriteLine(fullName);
             }
         }
     }
